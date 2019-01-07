@@ -1,0 +1,73 @@
+<head>
+网页head
+</head>
+<body>
+document.write(Date())
+<br>
+<button type="button" onclick="displayDate()">点击</button>
+<br>
+<script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+</script>
+<p id="demo">这是一个段落</p>
+<br>
+<button type="button" onclick="event()">写入</button>
+<br>
+<br>
+<br>
+<div id="test">
+    <h2>hello</h2
+</div>
+<script>
+function changeCode() {
+    var a=document.getElementById("test");
+    var h1 = document.createElement("h1");
+    var content = document.createTextNode("HI HAO R U?")
+    h1.appendChild(content);
+    a.appendChild(h1);
+}
+</script>
+<script>
+//window.onload=function(){
+//    changeCode();
+//};
+</script>
+<script type="text/javascript">
+
+function addSubmit()
+
+{
+
+var targetForm = document.forms[ "form1" ];
+
+targetForm.action = "logo.do?method=downAdd";
+
+targetForm.submit();
+
+}
+
+</script>
+
+<form name="form1" method="post" action="logo.do" enctype="multipart/form-data">
+
+ </form>
+
+<script>
+function event(){
+        form = $("<form></form>")
+        form.attr('action',action)
+        form.attr('method','post')
+        input1 = $("<input type='hidden' name='input1' />")
+        input1.attr('value','input1 value')
+        input2 = $("<input type='text' name='textinput' value='text input' />")
+        form.append(input1)
+        form.append(input2)
+        form.appendTo("body")
+        form.css('display','none')
+        form.submit()
+}
+</script>
+
+</body>
